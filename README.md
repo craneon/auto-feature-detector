@@ -16,7 +16,7 @@ This is the second of two tests to determine whether an image is a landscape. It
 
 This algoritm first reduces the number of colors in an image to 4 by creating an indexed image and a new colormap. Matlab documentation available here: http://www.mathworks.com/help/images/reducing-the-number-of-colors-in-an-image.html (Alternatives including using a histogram to detect major colors in the image, but this method is faster and less processor-intensive).
 
-It then runs two tests: object prevalence, and 
+It then runs two tests: object prevalence and edge complexity.
 
 The Object Prevalence test detects the number of salient objects produced from the region-growing algorithm. When the color space is reduced to three colors by the color reduction function above, more salient objects indicates a huge variance in the location of the color splotches, indicating a splatter-paint method. 
 
